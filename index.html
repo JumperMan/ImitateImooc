@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>仿旧版慕课网</title>
+  
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+  <link rel="stylesheet" href="css/jm.css" />
+  <style type="text/css">
+    body{ width:100%; margin:40px auto;font-family: "Microsoft Yahei";}
+
+  </style>
+
+
+      </head>
+
+  <body>
+
+  	<!-- 顶部导航 -->
+  	<div class="top">
+  		<div id="logo" class="logo">
+  			<a href="/" target="_self" class="hide-text" title="首页">慕课网</a>
+  		</div>
+
+  		<ul class="nav-item">  
+
+  			<li>
+  				<a href="/course/list"  target="_blank">课程</a>
+  			</li>
+  			<li><a href="/course/program" class="program-nav " target="_blank">职业路径<i class="icn-new"></i></a></li>
+  			<li>
+  				<a href="#source" target="_self">实战</a>
+  			</li>
+  			<li><a href="/wenda"  target="_blank">猿问</a></li>
+  			<li><a href="/article"  target="_blank">手记</a></li>
+  			<li><a href="" data-toggle="modal" data-target="#aboutMyModal" >关于</a></li>
+  		</ul>
+
+  		<div class="search-warp" >
+  			<!-- <div class="searchTags">推广的搜索标签</div> -->
+
+  			<div class="search-area" >
+  				<input class="search-input" placeholder="请输入想搜索的内容" type="text">
+  				<span class="icon-search glyphicon glyphicon-search" ></span>			
+  				<span class="glyphicon glyphicon-shopping-cart"><span class="">购物车</span></span>	
+  				<span class="glyphicon glyphicon-bell"></span>	
+  				<span class="glyphicon glyphicon-user" ></span>
+  			</div>
+  		</div>
+  	</div><!-- 顶部导航 end -->
+
+
+  	<!-- 分类导航和轮播切换 -->
+  	<div class="carouselSummary">
+
+  		<!-- <div class="rightPartFirst">rightPartFirst</div> -->
+  		<div class="rightPart">
+
+  			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  				<!-- Indicators -->
+  				<ol class="carousel-indicators">
+  					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  				</ol>
+
+  				<!-- Wrapper for slides -->
+  				<div class="carousel-inner" role="listbox">
+  					<div class="item active">
+  						<a href="">
+  						<img src="image/58a566300001c75e12000460.jpg" alt="1 slide">
+  						<div class="carousel-caption">
+  						</div>
+  						</a>
+  					</div>
+  					<div class="item">
+  						<a href="">
+  						<img src="image/589da23c00013df612000460.jpg" alt="2 slide">
+  						<div class="carousel-caption">
+  						</div>
+  						</a>
+  					</div>
+
+  					<div class="item">
+  						<a href="">
+  						<img src="image/5899a4bb000169c412000460.jpg" alt="3 slide">
+  						<div class="carousel-caption">
+  						</div>
+  						</a>
+  					</div>
+
+  					<div class="item">
+  						<a href="">
+  						<img src="image/588206a20001f49812000460.jpg" alt="4 slide">
+  						<div class="carousel-caption">
+  						</div>
+  						</a>
+  					</div>
+
+  					<div class="item">
+  						<a href="">
+  						<img src="image/5888225f0001ec8712000460.jpg" alt="5 slide">
+  						<div class="carousel-caption">
+  						</div>
+  						</a>
+  					</div>
+
+
+  					
+
+  				</div>
+
+  				<!-- Controls -->
+  				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  					<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  					<span class="sr-only">Next</span>
+  				</a>
+  			</div>
+
+
+
+  		</div>
+  	</div><!-- 分类导航和轮播切换 end-->
+
+
+  	<!-- 实战推荐 -->
+    <div class="mainPart">
+    	
+    		<span>实战推荐</span>
+
+
+    		<span class="moreInformation pull-right">更多<span class="glyphicon glyphicon-flag"></span></span>
+
+    		<div class="container-fluid">
+    			<div class="row">
+    			<!-- 私人订制.col-md-2point4 -->
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/5806de7c00014a3105400300-360-202.jpg">
+    					<div class="course-intro">
+    						<h5> 6小时用 jQuery 实现小应用</h5>
+    						<p class="introContent">  搭建一个清单应用，一次性掌握jQuery核心功能和使用技巧</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="cousePrice">￥88.00</span> 
+    						<span class="pull-right introContent">562人在学</span></div>
+    				</a>  				
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/57d79aa50001dce505400300-360-202.jpg">
+    					<div class="course-intro">
+    						<h5>  Laravel和 AngularJS开发全栈知乎</h5>
+    						<p class="introContent">   前端AngularJS，后端Laravel技术，全栈开发一个您自己的“知乎” </p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="cousePrice">￥228.00</span> 
+    						<span class="pull-right introContent">118人在学</span></div>
+    				</a>
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="">
+    					<img src="image/580d752500019ca805400300-360-202.jpg">
+    					<div class="course-intro">
+    						<h5>  算法与数据结构C++精解</h5>
+    						<p class="introContent">    深入讲解面试和实际开发中都会遇到的算法和数据结构问题</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="cousePrice">￥148.00</span> 
+    						<span class="pull-right introContent">1048人在学</span></div>
+    				</a>
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="">
+    					<img src="image/5784beee0001c31c05400300-360-202.jpg">
+    					<div class="course-intro">
+    						<h5>  飞速上手的跨平台App开发</h5>
+    						<p class="introContent">  以HTML5移动App开发框架Ionic，开发不受平台限制的App</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="cousePrice">￥88.00</span> 
+    						<span class="pull-right introContent">1313人在学</span></div>
+    				</a>
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="">
+    					<img src="image/579190240001d51d05400300-360-202.jpg">
+    					<div class="course-intro">
+    						<h5> Yii2.0打造完整电商平台</h5>
+    						<p class="introContent">  购物、下单、支付、收货...各功能模块开发，打造京东式电商平台</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="cousePrice">￥268.00</span> 
+    						<span class="pull-right introContent">818人在学</span></div>
+    				</a>
+    				</div>
+
+
+
+
+
+    			</div><!-- container-fluid -->
+
+    		</div>
+  	</div><!-- 实战推荐 end-->
+
+  	<!-- 免费好课 -->
+  	<div class="mainPart">
+    	
+    		<span class="">免费好课</span>
+
+
+    		<span class="moreInformation pull-right">更多<span class="glyphicon glyphicon-flag"></span></span>
+
+    		<div class="container-fluid">
+
+    			<div class="row">
+    			<!-- 私人订制.col-md-2point4 -->
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/53e1d1f90001400a06000338-228-128.jpg">
+    					<div class="course-intro">
+    						<h5>  响应式布局</h5>
+    						<p class="introContent"> 让网站兼容不同终端不再是梦</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="introContent">83784人在学</span></div>
+    				</a>  				
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/5704add60001e5f406000338-228-128.jpg">
+    					<div class="course-intro">
+    						<h5>  canvas实现星星闪烁特效</h5>
+    						<p class="introContent"> 使用HTML5实现轮播图片上的序列帧。</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="introContent">38264人在学</span></div>
+    				</a>
+    				</div>
+
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/5705d2fb0001b83206000338-228-128.jpg">
+    					<div class="course-intro">
+    						<h5>  canvas实现星星闪烁特效</h5>
+    						<p class="introContent"> 为圣诞节准备的H5+JS+CSS特效案例</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="introContent">76105人在学</span></div>
+    				</a>
+    				</div>
+
+
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/57552a9a0001778406000338-228-128.jpg">
+    					<div class="course-intro">
+    						<h5> 从 psd 到 html</h5>
+    						<p class="introContent"> 教你把PSD设计稿转化成HTML。</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="introContent">58086人在学</span></div>
+    				</a>
+    				</div>
+
+
+    				<div class="col-md-2point4">
+    				<a href="#">
+    					<img src="image/5704add60001e5f406000338-228-128.jpg">
+    					<div class="course-intro">
+    						<h5>  Hello，移动WEB</h5>
+    						<p class="introContent"> 跟随移动互联网的浪潮&quot;移动web&quot;</p>
+    					</div>
+    					<div class="course-bottom">
+    						<span class="introContent">73143人在学</span></div>
+    				</a>
+    				</div>
+
+    			</div><!-- container-fluid -->
+
+    		</div>
+  	</div><!-- 免费好课 end-->
+
+    <!-- outwrap-content -->
+    <div class="outwrap-content">
+
+    	<!-- 网页前端工程师 -->
+    	<div class="webFrontEndEngineer">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-2point4 webFrontEndImage">
+    					<div class="contentTitle">
+    						<p> Web<br />前端工程师</p>
+    					</div>
+    					<div class="careerPath">
+    						<a href><span>职业路径<span/>
+    							<span class="glyphicon glyphicon-chevron-right"></span>
+    						</a>
+    					</div>
+
+
+    					<div class="raiseWeapon">
+
+    						<a href="">
+    							<p class="">Web前端工程师成长第一阶段(基础篇)</p>
+    						</a>
+    						<a href="">
+    							<p class="">前端经典案例集萃之 "网页常用特效"</p>
+    						</a> 
+    						<a href="">  						
+    							<p>教你HTML5开发爱心鱼游戏</p>
+    						</a> 
+
+    					</div>
+
+    				</div>  				
+
+    				<div class="col-md-4point8 longer" >
+    					<a href="">
+    						<div class="longerUp">				
+    							<p>HTML5与CSS3实现动态网页</p>
+    						</div>
+    					</a>
+    					<a href="">
+    						<div class="longerDown">
+    							<p>组件方式开发 Web App全站</p>
+    						</div>
+    					</a>
+    				</div>
+
+    				<div class="col-md-2point4">
+      				<a href="#">
+      					<img src="image/56a6e218000122ca06000338-228-128.jpg">
+      					<div class="course-bottom">
+      						<!-- <span class="cousePrice">￥88.00</span>  -->
+      						<span class="introContent">24577人在学</span>
+      					</div>
+      					<div class="course-intro">
+      						<h5> CSS3扁平化博客之文章页及常用组件</h5>
+      						<!-- <p class="introContent"> 又一波 CSS3扁平化博客</p> -->
+      					</div>
+
+      				</a>
+
+      				<a href="#">
+      					<img src="image/57ab14aa0001bc9706000338-228-128.jpg">
+      					<div class="course-bottom">
+      						<!-- <span class="cousePrice">￥88.00</span>  -->
+      						<span class="introContent">43998人在学</span>
+      					</div>
+      					<div class="course-intro">
+      						<h5>JavaScript正则表达式</h5>
+      						<!-- <p class="introContent">正则表达式比你想象的更简单。</p> -->
+      					</div>
+
+      				</a>				
+      				</div>
+
+      				<div class="col-md-2point4">
+    	  				<a href="#">
+    	  					<img src="image/57fcab030001707f06000338-228-128.jpg">
+    	  					<div class="course-bottom">
+    	  						<!-- <span class="cousePrice">￥88.00</span>  -->
+    	  						<span class="introContent">28884人在学</span>
+    	  					</div>
+    	  					<div class="course-intro">
+    	  						<h5>CSS深入理解之padding</h5>
+    	  						<!-- <p class="introContent">  深入介绍CSS中padding属性的特点</p> -->
+    	  					</div>
+    	  					
+    	  					
+
+    	  				</a>
+    	  				<hr class="divider"/>
+    	  				<div class="list">
+    					<ul>
+    	  						<li><a href="">全屏切换效果</a></li>
+    	  						<li><a href="">Qnext前端交互沙龙</a></li>
+    	  						<li><a href="">Canvas玩转图像处理</a></li>
+    	  						<li><a href="">玩转Bootstrap（基础）</a></li>
+
+    	  						<li><a href="">基于bootstrap的网页开发</a></li>
+    	  						<li><a href="">HTML5+CSS3实现"共嗨世界杯"</a></li>
+    	  					</ul>	
+    	  				</div>
+
+      				</div>
+
+
+    			</div><!-- row -->
+
+    		</div><!-- container-fluid -->
+
+    	</div><!-- 网页前端工程师 end-->
+
+
+    	<!-- java工程师 -->
+    	<div class="javaEngineer">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-2point4 javaImage">
+    					<div class="contentTitle">
+    						<p> Java<br />工程师</p>
+    					</div>
+    					<div class="careerPath">
+    						<a href><span>职业路径<span/>
+    							<span class="glyphicon glyphicon-chevron-right"></span>
+    						</a>
+    					</div>
+
+
+    					<div class="raiseWeapon">
+
+    						<a href="">
+    							<p class="">模式宗师养成宝典之Java版</p>
+    						</a>
+    						<a href="">
+    							<p class="">搞定Java加解密</p>
+    						</a> 
+    						<a href="">  						
+    							<p>Hibernate开发宝典</p>
+    						</a> 
+
+    					</div>
+
+    				</div>  				
+
+    				<div class="col-md-7point2 longer" >
+    					<a href="">
+    						<div class="javaLonger">				
+    							<p>HTML5与CSS3实现动态网页</p>
+    						</div>
+    					</a>
+
+
+    					<div class=" col-md-4">
+    						<a href="#">
+    							<img src="image/5704a4ca00013d9106000338-228-128.jpg">
+    							<div class="course-bottom">
+    								<!-- <span class="cousePrice">￥88.00</span>  -->
+    								<span class="introContent"> 75627 人在学</span>
+    							</div>
+    							<div class="course-intro">
+    								<h5> Java Socket应用---通信是这样练成的</h5>
+    								<!-- <p class="introContent">使用 Socket 实现网络聊天通信 </p> -->
+    							</div>					
+    						</a>
+    					</div>
+
+    					<div class=" col-md-4">
+    						<a href="#">
+    							<img src="image/5704cbfd00013b6c06000338-228-128.jpg">
+    							<div class="course-bottom">
+    								<!-- <span class="cousePrice">￥88.00</span>  -->
+    								<span class="introContent"> 46169 人在学</span>
+    							</div>
+    							<div class="course-intro">
+    								<h5>  Java Web开发技术应用——过滤器</h5>
+    								<!-- <p class="introContent">Java Web开发中的过滤器的应用。 </p> -->
+    							</div>					
+    						</a>
+    					</div>
+
+    					<div class=" col-md-4">
+    						<a href="#">
+    							<img src="image/574669ba000105ec06000338-228-128.jpg">
+    							<div class="course-bottom">
+    								<!-- <span class="cousePrice">￥88.00</span>  -->
+    								<span class="introContent"> 17386 人在学</span>
+    							</div>
+    							<div class="course-intro">
+    								<h5> 模式的秘密---责任链模式</h5>
+    								<!-- <p class="introContent">有求必应，解耦代码——责任链模式 </p> -->
+    							</div>					
+    						</a>
+    					</div>
+
+
+    				</div>
+
+    				<div class="col-md-2point4">
+    					<a href="#">
+    						<img src="image/5774d7e00001eb9206000338-228-128.jpg">
+    						<div class="course-bottom">
+    							<!-- <span class="cousePrice">￥88.00</span>  -->
+    							<span class="introContent">28884人在学</span>
+    						</div>
+    						<div class="course-intro">
+    							<h5> 反射--Java高级开发必须懂的</h5>
+    							<!-- <p class="introContent"> 反射,Java高级开发必须要懂的知识点</p> -->
+    						</div>					
+    					</a>
+    					<hr class="divider"/>
+    					<div class="list">
+    						<ul>
+    							<li><a href="">Java中的文件上传下载</a></li>
+    							<li><a href="">Java 分页原理与实践（上）</a></li>
+    							<li><a href="">使用JSP+Servlet技术生成报表</a></li>
+    							<li><a href="">Hibernate缓存策略</a></li>
+
+    							<li><a href="">JAVA生成二维码</a></li>
+    							<li><a href="">JSON快速入门（Java版）</a></li>
+    						</ul>	
+    					</div>
+
+    				</div>
+
+
+    			</div><!-- row -->
+
+    		</div><!-- container-fluid -->
+
+    	</div>	<!-- java工程师 end-->
+    </div><!-- outwrap-content end-->		
+
+    <div class="footerSns">
+
+      <a href="http://weibo.com/jumperman/" class="footerSnsWeibo" target="_blank"  data-toggle="tooltip" data-placement="bottom"title="新浪微博"></a>
+      <a href="javascript:void(0);" class="footerSnsWeixin" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="扫描二维码&nbsp添加个人微信">
+        <i class="footerSnsQRcode"></i>
+      </a>        
+      <a href="http://t.qq.com/Jumper_Man" class="footerSnsTencentWeibo" target="_blank" data-toggle="tooltip" data-placement="bottom" title="腾讯微博"></a>        
+      <a href="http://user.qzone.qq.com/223305377/" class="footerSnsQzone hide-text" target="_blank" data-toggle="tooltip" data-placement="bottom" title="QQ空间"></a>
+    </div>   <!-- footerSns  end -->
+
+
+    <div class="footerLink">
+        <a>企业合作</a>
+        <a>人才招聘</a>
+        <a>联系我们</a>
+        <a>讲师招募</a>
+        <a>常见问题</a>
+        <a>意见反馈</a>
+        <a>慕课大学</a>
+        <a>友情链接</a>
+    </div>
+
+        <div class="source" id="source">
+          <p>&copy; 2017 慕课网  WanZhanpeng Code</p>
+        </div>
+
+
+  	<!-- 关于 modal -->
+  	<div class="modal fade" tabindex="-1" role="dialog" id="aboutMyModal">
+  		<div class="modal-dialog" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  					<h4 class="modal-title">仿慕课网</h4>
+  				</div>
+  				<div class="modal-body">
+  					<p>2017年根据HTML,CSS,JS,jQuery,bootstrap相关知识仿制慕课网首页。&hellip;</p>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+
+  				</div>
+  			</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+  	</div><!-- /.modal  -->
+
+
+  	<!-- 先引用jQuery,后引用bootstrap -->
+  	<script src="js/jquery-1.9.1.js"></script>
+  	<script src="js/bootstrap.min.js"></script><!-- 先引用jQuery,后引用bootstrap  end-->
+    
+    <script type="text/javascript" src="js/jm.js"></script>
+
+  </body>
+</html> 
